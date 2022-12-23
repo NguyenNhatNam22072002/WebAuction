@@ -31,7 +31,7 @@ const ItemList = () => {
               <CardSubtitle tag="h6" className="mb-2 text-muted">{item.description}</CardSubtitle>
               <hr />
               <div className="d-flex justify-content-between mt-3">
-                <CardText><span className="text-danger">{getAuctionBids(item.id) !==0?getAuctionBids(item.id):item.initial_price}</span><span className="text-secondary"> SEK</span></CardText>
+                <CardText><span className="text-danger">{getAuctionBids(item.id) !==0?getAuctionBids(item.id):item.initial_price}</span><span className="text-secondary"> $</span></CardText>
                 <CardText className="text-primary"><span className="text-secondary">Ends: </span>{formateTime(item.stop_date)}</CardText>
               </div>
             </CardBody>

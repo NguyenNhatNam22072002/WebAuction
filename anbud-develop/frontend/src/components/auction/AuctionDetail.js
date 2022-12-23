@@ -67,7 +67,7 @@ const AuctionDetail = (props) => {
         <Col lg="3" className="rounded border bg-light pb-5 mr-2">
           <div className="d-flex justify-content-between mt-3">
             <h5 className="text-primary">{getTheHighestBid(auctionItem.id) !==0?'Leading bid':'Starting price'}</h5>
-            <h5 className="text-danger">{getTheHighestBid(auctionItem.id) ===0?auctionItem.initial_price:getTheHighestBid(auctionItem.id)} <span className="text-secondary">SEK</span></h5>
+            <h5 className="text-danger">{getTheHighestBid(auctionItem.id) ===0?auctionItem.initial_price:getTheHighestBid(auctionItem.id)} <span className="text-secondary">$</span></h5>
           </div>
           <hr />
           <div className="d-flex justify-content-between mt-3">
@@ -97,7 +97,7 @@ const AuctionDetail = (props) => {
                   return (
                     <div className="d-flex justify-content-between" key={'sub' + bid.id + i}>
                       <h6 className="text-capitalize text-dark">{bid.bidder.name}</h6>
-                      <h6 className="text-primary">{bid.bid} <span className="text-secondary">SEK</span></h6>
+                      <h6 className="text-primary">{bid.bid} <span className="text-secondary">$</span></h6>
                     </div>       
                   )
                 }
